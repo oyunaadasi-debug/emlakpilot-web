@@ -15,7 +15,7 @@
 </head>
 <body>
 <h1>Gizlilik Politikası</h1>
-<p class="meta">Son güncelleme: 27 Mayıs 2026</p>
+<p class="meta">Son güncelleme: 1 Haziran 2026</p>
 
 <p><strong>EmlakPilot</strong> (bundle: com.emlakpilot.app) kullanım sürecinde kişisel verilerinizin korunması bizim için önceliktir. Bu politika, hangi verileri topladığımızı, nasıl kullandığımızı ve haklarınızı açıklar.</p>
 
@@ -24,6 +24,8 @@
 <p><strong>Uygulama kullanımı sırasında:</strong> oluşturduğunuz ilanlar, müşteri kayıtları, görevler, etkileşim notları ve bunların eklenme/değişme tarihleri.</p>
 <p><strong>Cihaz verisi:</strong> oturum açma için Supabase Authentication tarafından sağlanan benzersiz kullanıcı kimliği (UUID), cihaz türü (iOS/Android), push bildirim token'ı (yalnızca push'a izin verdiyseniz).</p>
 <p><strong>Görseller:</strong> ilan fotoğrafları yalnızca siz yüklediğinizde toplanır.</p>
+<p><strong>AI özellikleri:</strong> AI destekli arama kullandığınızda yazdığınız arama cümlesi; AI ilan açıklaması oluşturduğunuzda yalnızca ilgili ilan alanları işlenir. Mülk sahibi iletişim bilgileri AI açıklama servisine gönderilmez.</p>
+<p><strong>Tanılama verisi:</strong> uygulama hatalarının giderilmesi için hata kayıtları ve sınırlı performans verileri toplanabilir.</p>
 
 <h2>2. Verilerin Kullanım Amacı</h2>
 <p>Verileriniz yalnızca size hizmet sunmak amacıyla kullanılır: hesabınızın yönetimi, ilan/müşteri kayıtlarınızın saklanması, bildirimlerin iletilmesi, danışman performans raporları, abonelik durumunuzun takibi.</p>
@@ -34,12 +36,13 @@
 <ul>
   <li><strong>Supabase</strong> (barındırma + auth) — sunucu Tokyo/Japonya (ap-northeast-1)</li>
   <li><strong>Expo</strong> (push notification servisi) — token'lar üzerinden bildirim iletimi</li>
+  <li><strong>DeepSeek</strong> (AI destekli arama ve ilan açıklaması) — yalnızca özelliği kullandığınızda gerekli metin ve ilan alanlarının işlenmesi</li>
+  <li><strong>Sentry</strong> (hata izleme) — uygulama hatalarının teşhisi ve performans takibi</li>
 </ul>
 <p>Yasal zorunluluk dışında verileriniz hiçbir devlet kurumuna paylaşılmaz.</p>
 
 <h2>4. Veri Güvenliği</h2>
 <p>Tüm veriler şifrelenmiş bağlantı (HTTPS/TLS) üzerinden iletilir. Veritabanı seviyesinde Row-Level Security (RLS) ile her firma yalnızca kendi verilerini görür. Farklı firmaların verileri birbirinden tamamen izoledir.</p>
-<p>Yeni bir cihazdan giriş yaparken e-posta ile doğrulama kodu istenir (2FA).</p>
 
 <h2>5. Veri Saklama ve Silme</h2>
 <p>Verileriniz hesabınız aktif olduğu sürece saklanır. Hesabınızı sildiğinizde tüm ilişkili veriler (ilanlar, müşteriler, görevler, görseller) kalıcı olarak silinir.</p>
